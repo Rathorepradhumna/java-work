@@ -1,8 +1,10 @@
-package work;
+package ObjectManupulationTest;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import objectManupulation.Rectangle;
 
 public class TestRectangle {
 

@@ -1,4 +1,4 @@
-package work;
+package objectManupulation;
 
 public class Rectangle {
 	private int length;
