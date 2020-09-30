@@ -26,23 +26,33 @@ public class Main {
 		schools.addObjects(s4);
 		schools.addObjects(s5);
 		schools.addObjects(s6);
+		
 		List<School> sch = schools.getObject();
 		System.out.println("Names of school by list");
 		for(School i:sch) {
 			System.out.print(i.getName()+ " ");
 		}
-		GeneralTreeSet<School> schoolsGenTree = new GeneralTreeSet<School>();
-		schoolsGenTree.addObject(s1);
-		schoolsGenTree.addObject(s2);
-		schoolsGenTree.addObject(s3);
-		schoolsGenTree.addObject(s4);
-		schoolsGenTree.addObject(s5);
-		schoolsGenTree.addObject(s6);
-		TreeSet<School> sch2 = schoolsGenTree.getObject();
-		System.out.println("Names of school by order");
-		for(School i: sch2) {
-			System.out.print(i.getName()+ " ");
+		Car c1 =new Car("Honda" , "city" , 2019,1000000);
+		Car c2 =new Car("Bmw" , "x1" , 2017,300000);
+		Car c3 =new Car("Audi" , "a4" , 2020,10000000);
+		TreeSet<Car> carTreeSet =  new TreeSet<Car>();
+		carTreeSet.add(c1);
+		carTreeSet.add(c2);
+		carTreeSet.add(c3);
+		System.out.println("\n cars ");
+		for(Car c: carTreeSet) {
+			System.out.print(c.getModel()+" ");
 		}
-		
+		Student st1 = new Student("Pradhumna" , "Apple");
+		Student st2 = new Student("Namrata" , "Mango");
+		Student st3 = new Student("Poorva" , "Banana");
+		Map <String , String > stuMap = new HashMap<String , String>();
+		stuMap.put(st1.getName(), st1.getFruit());
+		stuMap.put(st2.getName(), st2.getFruit());
+		stuMap.put(st3.getName(), st3.getFruit());
+		System.out.println("\n printing data of map");
+		 for(Map.Entry m : stuMap.entrySet()){    
+			    System.out.println(m.getKey()+" "+m.getValue());    
+			   }  
 	}
 }

@@ -1,6 +1,6 @@
 package collectionOne;
 
-public class Car {
+public class Car implements Comparable<Car> {
 	private String make;
 	private String model;
 	private int year;
@@ -64,6 +64,11 @@ public class Car {
 	}
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	public int compareTo(Car c) {
+		// TODO Auto-generated method stub
+		int l = this.make.compareTo(c.make);
+	    return l == 0 ? this.make.compareTo(c.make) : l;
 	}
 	
 }

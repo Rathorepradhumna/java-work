@@ -1,6 +1,6 @@
 package collectionOne;
 
-public class School implements Comparable{
+public class School implements Comparable<School>{
 	 private String name;
 	 private String city;
 	 private String schoolDistrict;
@@ -74,5 +74,9 @@ public class School implements Comparable{
 	public void setGreatSchoolRanking(int greatSchoolRanking) {
 		this.greatSchoolRanking = greatSchoolRanking;
 	}
-	 
+	public int compareTo(School arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 }
