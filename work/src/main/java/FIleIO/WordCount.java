@@ -15,7 +15,7 @@ public class WordCount {
 		if(file.exists()) {
 			BufferedReader reader = new BufferedReader(new FileReader(location));
 			while((line=reader.readLine())!=null) {
-			
+				
 				//line  = reader.readLine();
 				String wordList[] = line.split(" ");
 				System.out.println(Arrays.toString(wordList));
